@@ -11,8 +11,8 @@ AudioFuse: Unified Spectral-Temporal Learning via a Hybrid ViT-1D CNN Architectu
 
 The AudioFuse model is a two-branch, late-fusion architecture designed to effectively learn from both the spectral and temporal domains of an audio signal. It consists of:
 
-1.  **The "Eye": A Spectrogram ViT Branch.** A custom, wide-and-shallow Vision Transformer (ViT) processes a 2D log-Mel spectrogram, allowing it to learn the global context of harmonic structures and tonal patterns.
-2.  **The "Ear": A Waveform 1D-CNN Branch.** A compact, shallow 1D Convolutional Neural Network (CNN) processes the raw 1D audio waveform, making it an expert at identifying precise, timing-based features and transient events.
+1.  **A Spectrogram ViT Branch:** A custom, wide-and-shallow Vision Transformer (ViT) processes a 2D log-Mel spectrogram, allowing it to learn the global context of harmonic structures and tonal patterns.
+2.  **A Waveform 1D-CNN Branch:** A compact, shallow 1D Convolutional Neural Network (CNN) processes the raw 1D audio waveform, identifying precise, timing-based features and transient events.
 
 The final, high-level feature vectors from these two independent "expert" branches are then concatenated and passed to a final MLP head for a robust, unified classification.
 
