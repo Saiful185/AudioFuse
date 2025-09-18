@@ -16,9 +16,7 @@ The AudioFuse model is a two-branch, late-fusion architecture designed to effect
 
 The final, high-level feature vectors from these two independent "expert" branches are then concatenated and passed to a final MLP head for a robust, unified classification.
 
-![AudioFuse Architecture Diagram](figures/AudioFuse_Architecture.png)  
-*(Please replace `figures/AudioFuse_Architecture.png` with the path to your own model diagram)*
-
+![AudioFuse Architecture Diagram](AudioFuse_Architecture.png)  
 ---
 
 ## Key Results
