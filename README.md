@@ -93,8 +93,8 @@ The pre-trained model weights for our key experiments are available for download
 | Model | Trained On | Description | Download Link |
 | :--- | :--- | :--- | :--- |
 | **AudioFuse (Fusion)** | PhysioNet | Our main Spectrogram-Waveform fusion model. | [Link](https://github.com/Saiful185/AudioFuse/releases/download/v1.0.0/best_model_AudioFuse_v1.0.0.keras) |
-| **Spectrogram Baseline** | PhysioNet | The ViT baseline model. | [Link](https://github.com/Saiful185/AudioFuse/releases/tag/v1.0.0/best_model_spectrogram_physionet.keras) |
-| **Waveform Baseline** | PhysioNet | The 1D-CNN baseline model. | [Link](https://github.com/Saiful185/AudioFuse/releases/tag/v1.0.0/best_model_waveform_baseline.keras) |
+| **Spectrogram Baseline** | PhysioNet | The ViT baseline model. | [Link](https://github.com/Saiful185/AudioFuse/releases/download/v1.0.0/best_model_spectrogram_physionet.keras) |
+| **Waveform Baseline** | PhysioNet | The 1D-CNN baseline model. | [Link](https://github.com/Saiful185/AudioFuse/releases/download/v1.0.0/best_model_waveform_baseline.keras) |
 
 ## Citation
 
