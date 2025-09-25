@@ -84,8 +84,6 @@ The code is organized into Jupyter/Colab notebooks (`.ipynb`) for each key exper
 
 ---
 
----
-
 ## Pre-trained Models
 
 The pre-trained model weights for our key experiments are available for download from the [v1.0.0 release](https://github.com/Saiful185/AudioFuse/releases/v1.0.0) on this repository.
