@@ -53,3 +53,40 @@ This project is built using TensorFlow.
 ```bash
 git clone https://github.com/Saiful185/AudioFuse.git
 cd AudioFuse
+```
+
+**2. Install dependencies:**
+It is recommended to use a virtual environment.
+```bash
+pip install -r requirements.txt
+```
+Key dependencies include: `tensorflow`, `pandas`, `opencv-python`, `librosa`, `scikit-learn`, `seaborn`.
+
+---
+
+## Dataset Preparation
+
+The experiments are run on four publicly available datasets. For fast I/O, it is highly recommended to download the datasets, zip them, upload the zip file to your Google Drive, and then use the unzipping cells in the Colab notebooks.
+
+#### 1. PhysioNet 2016
+- **Download:** From the [Kaggle dataset page](https://www.kaggle.com/datasets/bjoernjostein/physionet-challenge-2016) or the PhysioNet Challenge page.
+  
+#### 2. PASCAL
+- **Download:** From the [Kaggle dataset page](https://www.kaggle.com/datasets/kinguistics/heartbeat-sounds).
+
+## Usage: Running the Experiments
+
+The code is organized into Jupyter/Colab notebooks (`.ipynb`) for each key experiment.
+
+1.  **Open a notebook**.
+2.  **Update the paths** in the first few cells to point to your dataset's location (either on Google Drive for unzipping or a local path).
+3.  **Run the cells sequentially** to perform data setup, model training, and final evaluation.
+
+---
+
+## Citation
+
+If you find this work useful in your research, please consider citing our paper:
+
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for details.
