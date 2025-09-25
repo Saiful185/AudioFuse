@@ -1,2 +1,2 @@
 # **AudioFuse**
-This script can be used to evaluate **AudioFuse** models using pretrained weights from saved models.
+The script in this folder can be used to evaluate **AudioFuse** models using pretrained weights from saved models.
