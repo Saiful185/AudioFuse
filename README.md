@@ -99,7 +99,7 @@ The pre-trained model weights for our key experiments are available for download
 If you find this work useful in your research, please consider citing our paper:
 
 @article{siddiqui2025audiofuse,\
-      title={AudioFuse: Unified Spectral-Temporal Learning via a Hybrid ViT-1D CNN Architecture for Robust Phonocardiogram Classification},\ 
+      title={AudioFuse: Unified Spectral-Temporal Learning via a Hybrid ViT-1D CNN Architecture for Robust Phonocardiogram Classification}, 
       author={Md. Saiful Bari Siddiqui and Utsab Saha},\
       year={2025},\
       eprint={2509.23454},\
