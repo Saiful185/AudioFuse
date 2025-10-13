@@ -14,7 +14,7 @@ The AudioFuse model is a two-branch, late-fusion architecture designed to effect
 1.  **A Spectrogram ViT Branch:** A custom, wide-and-shallow Vision Transformer (ViT) processes a 2D log-Mel spectrogram, allowing it to learn the global context of harmonic structures and tonal patterns.
 2.  **A Waveform 1D-CNN Branch:** A compact, shallow 1D Convolutional Neural Network (CNN) processes the raw 1D audio waveform, identifying precise, timing-based features and transient events.
 
-The final, high-level feature vectors from these two independent "expert" branches are then concatenated and passed to a final MLP head for a robust, unified classification.
+The final, high-level feature vectors from these two independent branches are then concatenated and passed to a final MLP head for a robust, unified classification.
 
 ![AudioFuse Architecture Diagram](figures/AudioFuse_Diagram.png) 
 ---
