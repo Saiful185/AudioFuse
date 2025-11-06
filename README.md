@@ -94,6 +94,8 @@ The pre-trained model weights for our key experiments are available for download
 | **Spectrogram Baseline** | PhysioNet | The ViT baseline model. | [Link](https://github.com/Saiful185/AudioFuse/releases/download/v1.0.0/best_model_spectrogram_physionet.keras) |
 | **Waveform Baseline** | PhysioNet | The 1D-CNN baseline model. | [Link](https://github.com/Saiful185/AudioFuse/releases/download/v1.0.0/best_model_waveform_baseline.keras) |
 
+---
+
 ## Citation
 
 If you find this work useful in your research, please consider citing our paper:
