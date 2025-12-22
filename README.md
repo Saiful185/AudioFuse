@@ -96,6 +96,32 @@ The pre-trained model weights for our key experiments are available for download
 
 ---
 
+## Appendix: Ablation Studies
+
+To validate our architectural choices, we performed several ablation studies. The key findings are summarized here, with full training logs and configurations available within the notebooks in this repository.
+
+### ViT Branch Hyperparameter Sweep
+
+A critical component of our `AudioFuse` model is the custom, lightweight Vision Transformer branch. To determine its optimal configuration, we conducted a hyperparameter sweep over the number of transformer layers (**Depth**) and attention heads (**Heads**). The goal was to find the best balance between model capacity, performance, and parameter efficiency when trained from scratch on the PhysioNet 2016 dataset.
+
+All experiments used the same late-fusion architecture, only modifying the ViT branch. The results below are the mean performance over 3 runs. The parameter counts reflect the **total parameters for the entire AudioFuse model**.
+
+| ViT Config (Depth x Heads) | Total Model Params | ROC-AUC | Accuracy | MCC |
+| :--- | :--- | :--- | :--- | :--- |
+| 4 Layers x 8 Heads | ~1.99 M | 0.8451 | 0.7612 | 0.5215 |
+| **6 Layers x 8 Heads (Selected)** | **~2.56 M** | **0.8608** | **0.7741** | **0.5508** |
+| 8 Layers x 8 Heads | ~3.17 M | 0.8592 | 0.7713 | 0.5451 |
+| 12 Layers x 6 Heads | ~4.35 M | 0.8515 | 0.7689 | 0.5402 |
+
+#### **Analysis:**
+
+The results of the sweep validate our choice of a "wide-and-shallow" design as the optimal trade-off for this task.
+*   The shallowest model (`4L x 8H`) likely lacked the capacity to learn the full complexity of the spectral patterns, resulting in lower performance.
+*   Increasing the model depth and parameter count beyond 6 layers (to `8L x 8H` and `12L x 6H`) led to a degradation in performance across all metrics. This strongly suggests that these larger models were beginning to overfit on the limited dataset size, failing to generalize as effectively.
+*   The **`6 Layers x 8 Heads`** configuration, with a total of **2.56M parameters**, emerged as the clear sweet spot, providing the best performance. This configuration was therefore selected for the final `AudioFuse` architecture used in all reported experiments.
+
+---
+
 ## Citation
 
 If you find this work useful in your research, please consider citing our paper:
